@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+	<!--- Dawg don't even try and steal this its not worth it --->
+	<!--- Q/ZbXIX2dt4XETSEWmqLWXRc0NN2AhASlc7k1B4fNIShKy9IKChDFkzy62HFh0UtN4ARJOHqX7mIeNDTs4SiChgbMJGnz2Z1khy6kU8m4h4= --->
+	<title>JustDoIt</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<script src="app.js"></script>
+	<h1>JustDoIt</h1>
+	<p>A simple tool to help you get stuff done.</p>
+	<button onclick="toggleBox()">Key</button>
+	<div id="apikey_box" hidden="true">
+		<div class="vertspacer"></div>
+		<div class="apibox">
+			<label for="apikey_input">API Key: </label>
+			<div class="smspacer"></div>
+			<input type="password" id="apikey_input" autocomplete="current-password">
+			<div class="smspacer"></div>
+			<button onclick="setCookie()">Set cookie</button>
+		</div>
+	</div>
+	<div class="lgvertspacer"></div>
+	<label for="url_input">Document URL:</label>
+	<input type="text" id="url_input" autocomplete="no">
+	<div class="lgvertspacer"></div>
+	<label for="question_input">Question:</label>
+	<input type="text" id="question_input" autocomplete="no">
+	<div class="lgvertspacer"></div>
+	<button onclick="run()">Run!</button>
+	<div class="lgvertspacer"></div>
+	<p id="output" class="response"></p>
+</body>
