@@ -76,20 +76,6 @@ async function getResponse(prompt) {
 	return data.choices[0].message.content;
 }
 
-function updateLoading() {
-	let output = document.getElementById("output").innerHTML;
-
-	if (output == "Loading.") {
-		document.getElementById("output").innerHTML = "Loading..";
-	} else if (output == "Loading..") {
-		document.getElementById("output").innerHTML = "Loading...";
-	} else if (output == "Loading...") {
-		document.getElementById("output").innerHTML = "Loading.";
-	} else {
-		document.getElementById("output").innerHTML = "Loading."
-	}
-}
-
 async function run() {
 	let article;
 	await getText().then(text => {article = text;});
